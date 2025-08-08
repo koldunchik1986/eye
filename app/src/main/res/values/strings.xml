@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Глаза Колдуна</string>
+    <string name="version_format">@koldun1986 Версия: v%1$s</string>
+
+    <!-- Search types -->
+    <string name="search_type_unknown">Тип запроса не определён</string>
+    <string name="search_type_tel">🔍 Поиск по: Телефон</string>
+    <string name="search_type_email">📧 Поиск по: Email</string>
+    <string name="search_type_tg_id">💬 Поиск по: Telegram ID</string>
+    <string name="search_type_name">👤 Поиск по: Имя</string>
+    <string name="search_type_all">🔎 Поиск по: всем полям</string>
+
+    <!-- Pagination / Search state -->
+    <string name="pagination_next">Следующие %1$d результатов</string>
+    <string name="pagination_no_more">Больше нет результатов</string>
+    <string name="pagination_searching">Идёт поиск...</string>
+    <string name="enter_query">Введите запрос.</string>
+    <string name="search_stopped">Поиск остановлен</string>
+    <string name="searching_in_file">🔍 Поиск в файле: %1$s...</string>
+    <string name="nothing_found">Ничего не найдено: %1$s</string>
+    <string name="no_files_for_search">Нет файлов для поиска.</string>
+    <string name="page_error">Ошибка: неверная страница.</string>
+    <string name="error_generic">Ошибка: %1$s</string>
+
+    <!-- Buttons -->
+    <string name="btn_search">Поиск</string>
+    <string name="btn_stop">СТОП</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_yes">Да</string>
+    <string name="btn_no">Нет</string>
+
+    <!-- File actions -->
+    <string name="share_title">Отправить</string>
+    <string name="delete_title">Удалить файл</string>
+    <string name="delete_message">Удалить файл:\n%1$s?</string>
+    <string name="file_deleted">Файл удалён</string>
+    <string name="delete_error">Ошибка при удалении</string>
+    <string name="rename_title">Переименовать</string>
+    <string name="rename_hint_invalid">Введите имя с .csv</string>
+    <string name="file_exists">Файл уже существует</string>
+    <string name="renamed_ok">Переименован</string>
+    <string name="rename_error">Ошибка при переименовании</string>
+    <string name="no_files">Нет файлов</string>
+
+    <!-- Import -->
+    <string name="file_added">Файл добавлен: %1$s</string>
+    <string name="save_error">Ошибка при сохранении</string>
+    <string name="could_not_open_file">Не удалось открыть файл</string>
+    <string name="file_empty">Файл пустой</string>
+    <string name="file_already_added">Файл уже добавлен: %1$s</string>
+    <string name="import_cancelled">Импорт отменён</string>
+
+    <!-- Mapping dialog -->
+    <string name="mapping_title">Сопоставьте поля</string>
+    <string name="mapping_field_prefix">Поле: </string>
+    <string name="mapping_hint">Ключ (tel, email, name, tg_id или новый)</string>
+</resources>

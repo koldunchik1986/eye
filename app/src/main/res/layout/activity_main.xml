@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Отображение версии приложения -->
+    <TextView
+        android:id="@+id/textViewVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@koldun1986 Версия: v1.0.2"
+        android:textSize="12sp"
+        android:textColor="#666" />
+    <!-- Кнопка добавить CSV -->
+    <Button
+        android:id="@+id/buttonAddFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить CSV-файл" />
+
+    <!-- Поле ввода запроса -->
+    <EditText
+        android:id="@+id/editTextQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите поисковый запрос..." />
+
+    <!-- Кнопка Поиск -->
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Поиск" />
+
+    <TextView
+        android:id="@+id/textViewSearchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Тип запроса не определён"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <!-- Кнопка Управление файлами -->
+    <Button
+        android:id="@+id/buttonShowFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Управление CSV файлами" />
+
+    <!-- Список файлов -->
+    <ListView
+        android:id="@+id/listViewFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <!-- Панель действий (Удалить, Переименовать, Отправить) -->
+    <LinearLayout
+        android:id="@+id/layoutFileActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/buttonDeleteFile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Удалить" />
+
+        <Button
+            android:id="@+id/buttonRenameFile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Переименовать" />
+
+        <Button
+            android:id="@+id/buttonShareFile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Отправить" />
+    </LinearLayout>
+
+    <!-- Результаты поиска -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/textViewResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:scrollbars="vertical"
+            android:maxLines="1000"
+            android:ellipsize="end" />
+
+    </ScrollView>
+    <!-- Кнопка "Следующие результаты" -->
+    <Button
+        android:id="@+id/buttonNextPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Следующие 50 результатов"
+        android:visibility="visible" />
+
+</LinearLayout>
