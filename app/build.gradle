@@ -7,7 +7,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.koldunchik1986.eye"
+        applicationId "om.koldunchik1986.eye"
         minSdk 21
         targetSdk 34
         versionCode 2

@@ -1,4 +1,4 @@
-package com.example.eyegod;
+package com.koldunchik1986.eye;
 
 import android.Manifest;
 import android.app.AlertDialog;
