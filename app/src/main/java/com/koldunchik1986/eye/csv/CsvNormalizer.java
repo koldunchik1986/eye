@@ -122,5 +122,3 @@ public final class CsvNormalizer {
         return '"' + escaped + '"';
     }
 }
-
-
